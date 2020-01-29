@@ -1,0 +1,28 @@
+<p>inbuilt works!</p>
+
+<ol>
+    <li *ngFor="let fr of friends; let counter = index">
+        {{ fr | uppercase}} at {{ counter}}
+    </li>
+</ol>
+
+{{name | uppercase}}
+<br>
+{{message | titlecase}}
+<br>
+Salary: {{ salary | currency:'JPY'}}
+<br>
+Salary: {{ salary | currency:'INR'}}
+<br>
+Salary: {{ salary | currency}}
+<br>
+Salary: {{ salary | currency:'EUR'}}
+<br>
+Current Date: {{ birthday | date:'longTime' | uppercase  }}
+<br>
+Current Date: {{ birthday | date | lowercase  }}
+<br>
+Current Date: {{ birthday | date:'full' | uppercase  }}
+<br>
+Current Week: {{ birthday | date:'ww' | uppercase  }}
+

@@ -10,6 +10,7 @@ import { SidebarComponent } from './home/sidebar/sidebar.component';
 import { NotificationComponent } from './events/notification/notification.component';
 import { NorouteComponent } from './notfound/noroute/noroute.component';
 import { SuperComponent } from './directive/super/super.component';
+import { InbuiltComponent } from './pipe/inbuilt/inbuilt.component';
 
 //@ -> decorator
 @NgModule(
@@ -21,7 +22,8 @@ import { SuperComponent } from './directive/super/super.component';
                     SidebarComponent,
                     NotificationComponent,
                     NorouteComponent,
-                    SuperComponent
+                    SuperComponent,
+                    InbuiltComponent
                   ],
     imports: [
                 BrowserModule,

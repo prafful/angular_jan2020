@@ -27,7 +27,9 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 
-Assignment 1
+###########Assignment 1################
+
+
 1. Use ngFor directive to display the array of JSOn objects available at http://jsonplaceholder.typicode.com/users
 
 2. Display fields: id, username, city, lat, lng, company.name in table with respective  headings!
@@ -267,3 +269,12 @@ Assignment 1
   }
 ]
 
+
+
+#############Assignment 2 ######################
+
+Use inbuilt pipe -> date and display current date and current time in given format:
+
+
+Current Date: dd/mm/yyyy   (01/01/2020)
+Current Time: hh:mm:ss

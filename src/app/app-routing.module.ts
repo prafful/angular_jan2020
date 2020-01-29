@@ -5,6 +5,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { NotificationComponent } from './events/notification/notification.component';
 import { NorouteComponent } from './notfound/noroute/noroute.component';
 import { SuperComponent } from './directive/super/super.component';
+import { InbuiltComponent } from './pipe/inbuilt/inbuilt.component';
 
 
 const routes: Routes = [
@@ -25,6 +26,10 @@ const routes: Routes = [
   {
     path:'directive',
     component:SuperComponent
+  },
+  {
+    path:'inbuiltpipe',
+    component:InbuiltComponent
   },
   {
     path:'**',
