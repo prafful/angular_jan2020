@@ -16,3 +16,48 @@ Using ngFor directive:
         {{ fr }} at {{ counter}}
     </li>
 </ol>
+
+Using ngIf directive: <button (click)="toggleDisplay()">Toggle</button>
+<h1 *ngIf="display">Hide and Seek!</h1>
+<br>
+Using ngIf directive with else criteria:
+<button (click)="toggleElseDisplay()">Toggle Else</button>
+<h1 *ngIf="displayElse; else elseTemplate" >Something is always available!</h1>
+
+
+<ng-template #elseTemplate>
+    <h1> This is default else! 
+        <br>   
+        Be Happy With It If Nothing!!!!
+    </h1>    
+</ng-template>
+
+Using ngSwitch directive:
+<div>
+    <div [ngSwitch]="name">
+        <span *ngSwitchCase="'prafful'">PD</span>
+        <span *ngSwitchCase="'owioh'">OBB</span>
+        <span *ngSwitchCase="'adi'">AD</span>
+        <span *ngSwitchDefault>Default Value</span>
+    </div>    
+</div>
+
+Using ngFor directive with array of JSON objects:
+<table border="1">
+    <thead>
+        <tr>
+            <th>S.No</th>
+            <th>City</th>
+            <th>STD Code</th>
+        </tr>    
+    </thead>
+    <tbody>
+        <tr *ngFor="let loc of locations; let sno = index">
+            <td>{{sno + 1}}</td>
+            <td>{{ loc.city }}</td>
+            <td>{{ loc.code}}</td>
+        </tr>    
+    </tbody>
+    
+   
+</table>
