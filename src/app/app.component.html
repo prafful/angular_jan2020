@@ -3,9 +3,11 @@
 {{ title }}
 <br>
 Score: {{ score }}
-<hr>
-Loading the homepage component:
-<app-homepage></app-homepage>
 <br>
-Loading notifcation component:
-<cts-notification></cts-notification>
+<a routerLink="homepage">Home</a> &nbsp;
+<a routerLink="notify">Notification</a>
+
+<hr>
+
+
+<router-outlet></router-outlet>
