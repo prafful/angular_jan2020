@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NotificationComponent } from './events/notification/notification.component';
 import { NorouteComponent } from './notfound/noroute/noroute.component';
+import { SuperComponent } from './directive/super/super.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,10 @@ const routes: Routes = [
     path:'notify',
     component:NotificationComponent
   } ,
+  {
+    path:'directive',
+    component:SuperComponent
+  },
   {
     path:'**',
     component:NorouteComponent

@@ -9,6 +9,7 @@ import { HeaderComponent } from './home/header/header.component';
 import { SidebarComponent } from './home/sidebar/sidebar.component';
 import { NotificationComponent } from './events/notification/notification.component';
 import { NorouteComponent } from './notfound/noroute/noroute.component';
+import { SuperComponent } from './directive/super/super.component';
 
 //@ -> decorator
 @NgModule(
@@ -19,7 +20,8 @@ import { NorouteComponent } from './notfound/noroute/noroute.component';
                     HeaderComponent,
                     SidebarComponent,
                     NotificationComponent,
-                    NorouteComponent
+                    NorouteComponent,
+                    SuperComponent
                   ],
     imports: [
                 BrowserModule,

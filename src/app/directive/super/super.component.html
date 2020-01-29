@@ -1,0 +1,18 @@
+<p>super works!</p>
+Friends (Not a ideal way to display array elements!):
+{{friends}}
+
+<ol>
+    <li>{{friends[0]}}</li>
+    <li>{{friends[1]}}</li>
+    <li>{{friends[2]}}</li>
+    <li>{{friends[3]}}</li>
+</ol>
+
+Using ngFor directive:
+<ol>
+    <li *ngFor="let fr of friends; let counter = index">
+        <button (click)="callMe(counter)">Click</button> 
+        {{ fr }} at {{ counter}}
+    </li>
+</ol>
