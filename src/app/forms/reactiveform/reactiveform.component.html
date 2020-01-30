@@ -1,0 +1,29 @@
+<p>reactiveform works!</p>
+
+<div>
+    <form [formGroup]="reactiveUserForm" (ngSubmit)="userAdded(reactiveUserForm)">
+        First name: 
+        <input type="text"  formControlName='fn'> {{fn}}
+        <br>
+        Last name:
+        <input type="text" formControlName='ln'> {{ln}}
+        <br>
+        Salary:
+        <input type="number" formControlName='sl' > {{sl}}
+        <br>
+        Location:
+        <select name="location" formControlName='loc'>
+            <option value="chennai">Chennai</option>
+            <option value="bengaluru">Bengaluru</option>
+            <option value="japan">Japan</option>
+        </select>
+        {{loc}}
+        <br>
+        <button type="submit">Add</button>
+
+
+
+    </form>
+
+
+</div>

@@ -8,6 +8,7 @@ import { SuperComponent } from './directive/super/super.component';
 import { InbuiltComponent } from './pipe/inbuilt/inbuilt.component';
 import { CustompipeComponent } from './pipe/custompipe/custompipe.component';
 import { TemplateformComponent } from './forms/templateform/templateform.component';
+import { ReactiveformComponent } from './forms/reactiveform/reactiveform.component';
 
 
 const routes: Routes = [
@@ -40,6 +41,10 @@ const routes: Routes = [
   {
     path:'templateform',
     component:TemplateformComponent
+  },
+  {
+    path:'reactiveform',
+    component:ReactiveformComponent
   },
   {
     path:'**',

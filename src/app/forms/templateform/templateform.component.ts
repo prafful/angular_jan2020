@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemplateformComponent implements OnInit {
 
+  
+
   fn:string 
   ln:string
   sl:number
