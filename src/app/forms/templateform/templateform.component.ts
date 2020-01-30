@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemplateformComponent implements OnInit {
 
-  fn:string = 'prafful'
-  ln:string = 'daga'
-  sl:number = 88
-  loc: string = 'chennai'
+  fn:string 
+  ln:string
+  sl:number
+  loc: string
 
   constructor() { }
 
@@ -20,7 +20,7 @@ export class TemplateformComponent implements OnInit {
   userAdded = function(uf){
     console.log(this.fn);
     console.log("Add button clicked!");
-    console.log(uf.value);
+    console.log(uf);
   }
 
 }
