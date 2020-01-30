@@ -1,7 +1,7 @@
 Assignment 1
 1. Use ngFor directive to display the array of JSOn objects available at http://jsonplaceholder.typicode.com/users
 
-2. Display fields: id, username, city, lat, lng, company.name in table with respective  headings!
+2. Display fields: id, username, city, lat, lng, company.name in table with respective headings!
 
 3. You may want to assign array to some variable:
 

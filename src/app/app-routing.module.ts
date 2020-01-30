@@ -6,6 +6,7 @@ import { NotificationComponent } from './events/notification/notification.compon
 import { NorouteComponent } from './notfound/noroute/noroute.component';
 import { SuperComponent } from './directive/super/super.component';
 import { InbuiltComponent } from './pipe/inbuilt/inbuilt.component';
+import { CustompipeComponent } from './pipe/custompipe/custompipe.component';
 
 
 const routes: Routes = [
@@ -30,6 +31,10 @@ const routes: Routes = [
   {
     path:'inbuiltpipe',
     component:InbuiltComponent
+  },
+  {
+    path:'custompipe',
+    component:CustompipeComponent
   },
   {
     path:'**',

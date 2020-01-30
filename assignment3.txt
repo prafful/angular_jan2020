@@ -1,0 +1,7 @@
+Create a custom pipe to sort numbers. 
+Do it for score array created in custompipe.component.ts and custompipe.component.html?
+
+Give pipe the name of your choice and use it in line number 9 of custompipe.component.html.
+
+e.g. numbersort
+     numsort

@@ -1,4 +1,5 @@
 Use inbuilt pipe -> date and display current date and current time in given format:
 
+
 Current Date: dd/mm/yyyy   (01/01/2020)
 Current Time: hh:mm:ss

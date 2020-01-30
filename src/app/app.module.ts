@@ -11,7 +11,8 @@ import { NotificationComponent } from './events/notification/notification.compon
 import { NorouteComponent } from './notfound/noroute/noroute.component';
 import { SuperComponent } from './directive/super/super.component';
 import { InbuiltComponent } from './pipe/inbuilt/inbuilt.component';
-
+import { CustompipeComponent } from "./pipe/custompipe/custompipe.component";
+import { SuperstringPipe } from './custompipe/superstring.pipe';
 //@ -> decorator
 @NgModule(
   {
@@ -23,7 +24,9 @@ import { InbuiltComponent } from './pipe/inbuilt/inbuilt.component';
                     NotificationComponent,
                     NorouteComponent,
                     SuperComponent,
-                    InbuiltComponent
+                    InbuiltComponent,
+                    CustompipeComponent,
+                    SuperstringPipe
                   ],
     imports: [
                 BrowserModule,
