@@ -7,6 +7,7 @@ import { NorouteComponent } from './notfound/noroute/noroute.component';
 import { SuperComponent } from './directive/super/super.component';
 import { InbuiltComponent } from './pipe/inbuilt/inbuilt.component';
 import { CustompipeComponent } from './pipe/custompipe/custompipe.component';
+import { TemplateformComponent } from './forms/templateform/templateform.component';
 
 
 const routes: Routes = [
@@ -35,6 +36,10 @@ const routes: Routes = [
   {
     path:'custompipe',
     component:CustompipeComponent
+  },
+  {
+    path:'templateform',
+    component:TemplateformComponent
   },
   {
     path:'**',

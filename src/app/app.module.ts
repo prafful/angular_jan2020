@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from "@angular/forms";
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -13,6 +14,7 @@ import { SuperComponent } from './directive/super/super.component';
 import { InbuiltComponent } from './pipe/inbuilt/inbuilt.component';
 import { CustompipeComponent } from "./pipe/custompipe/custompipe.component";
 import { SuperstringPipe } from './custompipe/superstring.pipe';
+import { TemplateformComponent } from './forms/templateform/templateform.component';
 //@ -> decorator
 @NgModule(
   {
@@ -26,11 +28,13 @@ import { SuperstringPipe } from './custompipe/superstring.pipe';
                     SuperComponent,
                     InbuiltComponent,
                     CustompipeComponent,
-                    SuperstringPipe
+                    SuperstringPipe,
+                    TemplateformComponent
                   ],
     imports: [
                 BrowserModule,
-                AppRoutingModule
+                AppRoutingModule,
+                FormsModule
                 
               ],
     providers: [],
