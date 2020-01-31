@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
 import { ReactiveFormsModule } from "@angular/forms";
+import { HttpClientModule } from "@angular/common/http";
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -19,6 +20,7 @@ import { TemplateformComponent } from './forms/templateform/templateform.compone
 import { ReactiveformComponent } from './forms/reactiveform/reactiveform.component';
 import { ConsumeLocal1Component } from './consume/consume-local1/consume-local1.component';
 import { ConsumeLocal2Component } from './consume/consume-local2/consume-local2.component';
+import { ConsumeremoteComponent } from './consume/consumeremote/consumeremote.component';
 
 //@ -> decorator
 @NgModule(
@@ -37,13 +39,15 @@ import { ConsumeLocal2Component } from './consume/consume-local2/consume-local2.
                     TemplateformComponent,
                     ReactiveformComponent,
                     ConsumeLocal1Component,
-                    ConsumeLocal2Component
+                    ConsumeLocal2Component,
+                    ConsumeremoteComponent
                   ],
     imports: [
                 BrowserModule,
                 AppRoutingModule,
                 FormsModule,
-                ReactiveFormsModule
+                ReactiveFormsModule,
+                HttpClientModule
                 
               ],
     providers: [],

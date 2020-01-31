@@ -11,6 +11,7 @@ import { TemplateformComponent } from './forms/templateform/templateform.compone
 import { ReactiveformComponent } from './forms/reactiveform/reactiveform.component';
 import { ConsumeLocal1Component } from './consume/consume-local1/consume-local1.component';
 import { ConsumeLocal2Component } from './consume/consume-local2/consume-local2.component';
+import { ConsumeremoteComponent } from './consume/consumeremote/consumeremote.component';
 
 
 const routes: Routes = [
@@ -55,6 +56,10 @@ const routes: Routes = [
   {
     path:'consume2',
     component:ConsumeLocal2Component
+  },
+  {
+    path:'remote',
+    component:ConsumeremoteComponent
   },
   {
     path:'**',

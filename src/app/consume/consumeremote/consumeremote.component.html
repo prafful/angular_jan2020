@@ -1,0 +1,26 @@
+<p>consumeremote works!</p>
+
+<table border="1">
+
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Username</th>
+            <th>City</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Company Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let user of users'>
+        <td>{{user.id}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.address.city}}</td>
+        <td>{{user.address.geo.lat}}</td>
+        <td>{{user.address.geo.lng}}</td>
+        <td>{{user.company.name}}</td>
+        </tr>
+    </tbody>
+
+</table>
