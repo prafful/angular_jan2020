@@ -17,6 +17,9 @@ import { CustompipeComponent } from "./pipe/custompipe/custompipe.component";
 import { SuperstringPipe } from './custompipe/superstring.pipe';
 import { TemplateformComponent } from './forms/templateform/templateform.component';
 import { ReactiveformComponent } from './forms/reactiveform/reactiveform.component';
+import { ConsumeLocal1Component } from './consume/consume-local1/consume-local1.component';
+import { ConsumeLocal2Component } from './consume/consume-local2/consume-local2.component';
+
 //@ -> decorator
 @NgModule(
   {
@@ -32,7 +35,9 @@ import { ReactiveformComponent } from './forms/reactiveform/reactiveform.compone
                     CustompipeComponent,
                     SuperstringPipe,
                     TemplateformComponent,
-                    ReactiveformComponent
+                    ReactiveformComponent,
+                    ConsumeLocal1Component,
+                    ConsumeLocal2Component
                   ],
     imports: [
                 BrowserModule,

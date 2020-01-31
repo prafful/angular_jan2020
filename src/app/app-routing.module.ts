@@ -9,6 +9,8 @@ import { InbuiltComponent } from './pipe/inbuilt/inbuilt.component';
 import { CustompipeComponent } from './pipe/custompipe/custompipe.component';
 import { TemplateformComponent } from './forms/templateform/templateform.component';
 import { ReactiveformComponent } from './forms/reactiveform/reactiveform.component';
+import { ConsumeLocal1Component } from './consume/consume-local1/consume-local1.component';
+import { ConsumeLocal2Component } from './consume/consume-local2/consume-local2.component';
 
 
 const routes: Routes = [
@@ -45,6 +47,14 @@ const routes: Routes = [
   {
     path:'reactiveform',
     component:ReactiveformComponent
+  },
+  {
+    path:'consume1',
+    component:ConsumeLocal1Component
+  },
+  {
+    path:'consume2',
+    component:ConsumeLocal2Component
   },
   {
     path:'**',
