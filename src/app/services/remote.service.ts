@@ -12,5 +12,15 @@ export class RemoteService {
     return this.http.get("https://jsonplaceholder.typicode.com/users")
   }
 
+  getAllCabs(){
+    return this.http.get('http://localhost:3000/allcabs')
+  }
+
+  getCabById(id){
+    return this.http.get('http://localhost:3000/allcabs' + '/' + id  )
+  }
+
+
+
 
 }

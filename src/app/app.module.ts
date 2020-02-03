@@ -21,6 +21,7 @@ import { ReactiveformComponent } from './forms/reactiveform/reactiveform.compone
 import { ConsumeLocal1Component } from './consume/consume-local1/consume-local1.component';
 import { ConsumeLocal2Component } from './consume/consume-local2/consume-local2.component';
 import { ConsumeremoteComponent } from './consume/consumeremote/consumeremote.component';
+import { ViewcabComponent } from './consume/viewcab/viewcab.component';
 
 //@ -> decorator
 @NgModule(
@@ -40,7 +41,8 @@ import { ConsumeremoteComponent } from './consume/consumeremote/consumeremote.co
                     ReactiveformComponent,
                     ConsumeLocal1Component,
                     ConsumeLocal2Component,
-                    ConsumeremoteComponent
+                    ConsumeremoteComponent,
+                    ViewcabComponent
                   ],
     imports: [
                 BrowserModule,

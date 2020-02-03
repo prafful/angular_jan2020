@@ -24,3 +24,28 @@
     </tbody>
 
 </table>
+<hr>
+<table border="1">
+
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Location</th>
+            <th>Score</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor='let cab of allCabs'>
+            <td>{{cab.id}}</td>
+            <td>{{cab.name}}</td>
+            <td>{{cab.location}}</td>
+            <td>{{cab.score}}</td>
+            <td>
+                <button (click)="seeCabDetail(cab.id)">Detail</button>
+            </td>
+        </tr>
+    </tbody>
+
+</table>
