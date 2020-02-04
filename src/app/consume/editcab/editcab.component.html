@@ -1,0 +1,33 @@
+<p>editcab works!</p>
+
+<h3>Edit Cab</h3>
+
+
+
+
+<form #addCabForm="ngForm" (ngSubmit)="editCurrentCab(addCabForm)">
+    <fieldset>
+        <legend>Add Cab</legend>
+        <label>Name:</label>
+        <input type="text" name="name" [(ngModel)]="editCab.name"> 
+        <br><br>
+        <label>Location: </label>
+        <input type="text" name="location" [(ngModel)]="editCab.location"> 
+        <br><br>
+        <label>Score: </label>
+        <input type="number" name="score" [(ngModel)]="editCab.score"> 
+        <br><br>
+        <label>Description: </label>
+        <textarea name="description" [(ngModel)]="editCab.description"></textarea>
+        <br><br>
+        <label >Image: </label>
+        <img [src]="'assets/images/'+editCab.image" >
+        <br><br>     
+        <input type="file" name="image" [(ngModel)]="editCab.image">
+        <br><br>
+        <button type="submit">Edit Cab</button>
+        </fieldset>
+    </form>
+<hr>
+{{editCab.image}}
+

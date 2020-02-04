@@ -13,6 +13,8 @@ import { ConsumeLocal1Component } from './consume/consume-local1/consume-local1.
 import { ConsumeLocal2Component } from './consume/consume-local2/consume-local2.component';
 import { ConsumeremoteComponent } from './consume/consumeremote/consumeremote.component';
 import { ViewcabComponent } from './consume/viewcab/viewcab.component';
+import { AddcabComponent } from './consume/addcab/addcab.component';
+import { EditcabComponent } from './consume/editcab/editcab.component';
 
 
 const routes: Routes = [
@@ -65,6 +67,14 @@ const routes: Routes = [
   {
     path:'viewcab/:myid',
     component:ViewcabComponent
+  },
+  {
+    path:'openaddcab',
+    component:AddcabComponent
+  },
+  {
+    path:'editcab/:editId',
+    component:EditcabComponent
   },
   {
     path:'**',

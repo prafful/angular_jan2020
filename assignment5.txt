@@ -1,0 +1,25 @@
+Implement the code in addcab component to add only
+image name in cab.value.image.
+
+The current value being added is:
+
+ {
+      "name": "Didi",
+      "location": "ShenJen",
+      "score": 9,
+      "description": "Uber Kicker!",
+      "image": "C:\\fakepath\\vlcsnap-2019-12-27-12h20m16s837.png",
+      "id": 7
+    }
+
+You should modify addCab function in addCab component to add modifiec 
+JSON object as below:
+
+ {
+      "name": "Didi",
+      "location": "ShenJen",
+      "score": 9,
+      "description": "Uber Kicker!",
+      "image": "vlcsnap-2019-12-27-12h20m16s837.png",
+      "id": 7
+    }

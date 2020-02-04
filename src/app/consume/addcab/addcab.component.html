@@ -1,0 +1,33 @@
+<p>addcab works!</p>
+
+<h3>Add New Cab</h3>
+
+
+
+
+<form #addCabForm="ngForm" (ngSubmit)="addCab(addCabForm)">
+    <fieldset>
+        <legend>Add Cab</legend>
+        <label>Name:</label>
+        <input type="text" name="name" [(ngModel)]="name"> {{name}}
+        <br><br>
+        <label>Location: </label>
+        <input type="text" name="location" [(ngModel)]="location"> {{location}}
+        <br><br>
+        <label>Score: </label>
+        <input type="number" name="score" [(ngModel)]="score"> {{score}}
+        <br><br>
+        <label>Description: </label>
+        <textarea name="description" [(ngModel)]="description"></textarea>
+        <br><br>
+        <label >Image: </label>
+        <input type="file" name="image" [(ngModel)]="image" >
+        <br><br>     
+        <br><br>
+        <button type="submit">Add Cab</button>
+        </fieldset>
+    </form>
+<hr>
+{{image}}
+<br>
+{{description}}

@@ -20,6 +20,18 @@ export class RemoteService {
     return this.http.get('http://localhost:3000/allcabs' + '/' + id  )
   }
 
+  addCab(cab){
+    return this.http.post('http://localhost:3000/allcabs', cab)
+
+  }
+
+  deleteCab(id){
+    return this.http.delete('http://localhost:3000/allcabs' + '/' + id)
+  }
+
+  updateCab(id, cab){
+    return this.http.put('http://localhost:3000/allcabs' + '/' + id, cab)
+  }
 
 
 

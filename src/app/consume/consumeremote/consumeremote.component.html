@@ -25,6 +25,9 @@
 
 </table>
 <hr>
+<br>
+<button (click)="openAddCabPage()">Add Cab</button>
+<br><br>
 <table border="1">
 
     <thead>
@@ -33,7 +36,7 @@
             <th>Name</th>
             <th>Location</th>
             <th>Score</th>
-            <th>Action</th>
+            <th colspan="3">Action</th>
         </tr>
     </thead>
     <tbody>
@@ -44,6 +47,12 @@
             <td>{{cab.score}}</td>
             <td>
                 <button (click)="seeCabDetail(cab.id)">Detail</button>
+            </td>
+            <td>
+                <button (click)="editCabDetail(cab.id)">Edit</button>
+            </td>
+            <td>
+                <button (click)="deleteCurrentCab(cab.id)">Delete </button>
             </td>
         </tr>
     </tbody>

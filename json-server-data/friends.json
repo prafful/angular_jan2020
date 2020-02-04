@@ -1,36 +1,28 @@
 {
   "allcabs": [
     {
-      "name": "uber",
-      "location": "bengaluru",
+      "name": "UBER",
+      "location": "Mumbai",
       "score": 10,
-      "description": "quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "description": "Future of car sharing!",
       "image": "uber.png",
       "id": 2
     },
     {
       "name": "zoom",
-      "location": "pune",
+      "location": "PUNE",
       "score": 6,
       "description": "Ut enim ad minim veniam, Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. elit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-      "image": "zoom.jfif",
+      "image": "C:\\fakepath\\vlcsnap-2019-12-27-12h20m16s837.png",
       "id": 3
     },
     {
-      "name": "revv",
-      "location": "kochi",
-      "score": 8,
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "image": "revv.png",
-      "id": 4
-    },
-    {
-      "name": "carz",
-      "location": "kochi",
-      "score": 5,
-      "description": "Ut enim ad minim veniam, Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. elit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ",
-      "image": "uber.png",
-      "id": 5
+      "name": "DIDI",
+      "location": "ShenJen",
+      "score": 10,
+      "description": "Uber Of China",
+      "image": "C:\\fakepath\\vlcsnap-2019-12-27-12h20m16s837.png",
+      "id": 7
     }
   ]
 }
