@@ -24,6 +24,9 @@ import { ConsumeremoteComponent } from './consume/consumeremote/consumeremote.co
 import { ViewcabComponent } from './consume/viewcab/viewcab.component';
 import { AddcabComponent } from './consume/addcab/addcab.component';
 import { EditcabComponent } from './consume/editcab/editcab.component';
+import { ParentComponent } from './eventbinding/parent/parent.component';
+import { Child1Component } from './eventbinding/child1/child1.component';
+import { Child2Component } from './eventbinding/child2/child2.component';
 
 //@ -> decorator
 @NgModule(
@@ -46,7 +49,10 @@ import { EditcabComponent } from './consume/editcab/editcab.component';
                     ConsumeremoteComponent,
                     ViewcabComponent,
                     AddcabComponent,
-                    EditcabComponent
+                    EditcabComponent,
+                    ParentComponent,
+                    Child1Component,
+                    Child2Component
                   ],
     imports: [
                 BrowserModule,

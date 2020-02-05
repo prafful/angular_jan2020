@@ -1,0 +1,13 @@
+<p>Parent Component</p>
+Name: {{name}}   <i>(name value in parent component)</i>
+<hr>
+<br>
+Child Components:
+<br>
+<br>
+Child1:
+<cts-child1 [sendname]='name' (newName)="getNewNameFromChild($event)" ></cts-child1>
+<hr>
+<br>
+Child 2:
+<cts-child2></cts-child2>

@@ -1,0 +1,14 @@
+<p>child1 works!</p>
+Name: {{sendname}} <i>(value of name in child1 component)</i>
+<br>
+<br>
+Update Name: <input type="text" [(ngModel)]='sendname'>
+<br>
+New name: {{sendname}}
+<br>
+<button (click)="updateName()">Send 'sendname' to Parent</button>
+<p>
+    Child1 component will raise custom event so that ONLY parent component can capture the same!
+    Custom event will contain the updated name value!
+</p>
+

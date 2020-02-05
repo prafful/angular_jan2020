@@ -15,6 +15,7 @@ import { ConsumeremoteComponent } from './consume/consumeremote/consumeremote.co
 import { ViewcabComponent } from './consume/viewcab/viewcab.component';
 import { AddcabComponent } from './consume/addcab/addcab.component';
 import { EditcabComponent } from './consume/editcab/editcab.component';
+import { ParentComponent } from './eventbinding/parent/parent.component';
 
 
 const routes: Routes = [
@@ -75,6 +76,10 @@ const routes: Routes = [
   {
     path:'editcab/:editId',
     component:EditcabComponent
+  },
+  {
+    path:'eventbinding',
+    component:ParentComponent
   },
   {
     path:'**',
