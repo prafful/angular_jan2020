@@ -11,11 +11,21 @@ export class Child1Component implements OnInit {
 
  @Output() newName = new EventEmitter()
 
+ @Output() realTimeChange = new EventEmitter()
+
  updateName(){
    //event called newName is emitted. 
    //ONLY Parent component can capture this event
   this.newName.emit(this.sendname)
  }
+
+ realTimeName(){
+  console.log("Check for realtime change");
+  console.log(this.sendname);
+  this.realTimeChange.emit(this.sendname)
+ }
+
+ 
 
   constructor() { }
 

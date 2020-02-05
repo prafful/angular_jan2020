@@ -7,12 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
 
-  name = "Vue"
+  name = "Godot"
+  realTimeName:string = name
 
   getNewNameFromChild(e){
     console.log("Inside parent!");
     console.log(e);
     this.name = e
+  }
+
+  getNewNameInRealTime(e){
+    console.log("Real Time!");
+    console.log(e);
+    this.realTimeName = e
+
   }
 
   constructor() { }

@@ -2,7 +2,10 @@
 Name: {{sendname}} <i>(value of name in child1 component)</i>
 <br>
 <br>
-Update Name: <input type="text" [(ngModel)]='sendname'>
+Update Name: 
+<input type="text" 
+             [(ngModel)]='sendname' 
+             (ngModelChange)="realTimeName()" >
 <br>
 New name: {{sendname}}
 <br>
