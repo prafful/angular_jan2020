@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from "@angular/forms";
 import { ReactiveFormsModule } from "@angular/forms";
 import { HttpClientModule } from "@angular/common/http";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -27,6 +28,10 @@ import { EditcabComponent } from './consume/editcab/editcab.component';
 import { ParentComponent } from './eventbinding/parent/parent.component';
 import { Child1Component } from './eventbinding/child1/child1.component';
 import { Child2Component } from './eventbinding/child2/child2.component';
+import { AnimatetextComponent } from "./animation/animatetext/animatetext.component";
+import { Route1Component } from './events/route1/route1.component';
+import { Route2Component } from './events/route2/route2.component';
+import { Route3Component } from './events/route3/route3.component';
 
 //@ -> decorator
 @NgModule(
@@ -52,14 +57,19 @@ import { Child2Component } from './eventbinding/child2/child2.component';
                     EditcabComponent,
                     ParentComponent,
                     Child1Component,
-                    Child2Component
+                    Child2Component,
+                    AnimatetextComponent,
+                    Route1Component,
+                    Route2Component,
+                    Route3Component
                   ],
     imports: [
                 BrowserModule,
                 AppRoutingModule,
                 FormsModule,
                 ReactiveFormsModule,
-                HttpClientModule
+                HttpClientModule,
+                BrowserAnimationsModule
                 
               ],
     providers: [],

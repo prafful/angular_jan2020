@@ -16,6 +16,10 @@ import { ViewcabComponent } from './consume/viewcab/viewcab.component';
 import { AddcabComponent } from './consume/addcab/addcab.component';
 import { EditcabComponent } from './consume/editcab/editcab.component';
 import { ParentComponent } from './eventbinding/parent/parent.component';
+import { AnimatetextComponent } from './animation/animatetext/animatetext.component';
+import { Route1Component } from './events/route1/route1.component';
+import { Route2Component } from './events/route2/route2.component';
+import { Route3Component } from './events/route3/route3.component';
 
 
 const routes: Routes = [
@@ -31,7 +35,21 @@ const routes: Routes = [
   },
   {
     path:'notify',
-    component:NotificationComponent
+    component:NotificationComponent,
+    children:[
+      {
+        path:'r1',
+        component:Route1Component
+      },
+      {
+        path:'r2',
+        component:Route2Component
+      },
+      {
+        path:'r3',
+        component:Route3Component
+      }
+    ]
   } ,
   {
     path:'directive',
@@ -80,6 +98,10 @@ const routes: Routes = [
   {
     path:'eventbinding',
     component:ParentComponent
+  },
+  {
+    path:'animatetext',
+    component:AnimatetextComponent
   },
   {
     path:'**',

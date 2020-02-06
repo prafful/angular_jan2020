@@ -48,6 +48,12 @@
               <a class="dropdown-item" routerLink="remote">Consume Remote</a> 
             </div>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="eventbinding">Event Binding</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="animatetext">Animate</a>
+          </li>
         <li class="nav-item">
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
@@ -63,17 +69,19 @@
 
 <!--navbar ends-->
 
-{{ title }}
-<br>
-Score: {{ score }}
-<br>
 
 
 
 
 
-<a routerLink="eventbinding">Event Binding</a> &nbsp;
+
 <hr>
 
 
 <router-outlet></router-outlet>
+<hr>
+<br>
+{{ title }}
+<br>
+Score: {{ score }}
+<br>
