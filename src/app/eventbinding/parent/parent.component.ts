@@ -1,13 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'cts-parent',
   templateUrl: './parent.component.html',
   styleUrls: ['./parent.component.css']
 })
-export class ParentComponent implements OnInit {
+export class ParentComponent implements OnInit, OnChanges {
+  
+  simple: SimpleChanges
+
+  ngOnChanges(simple) {
+    console.log(this.simple);
+    
+  }
 
   name = "Godot"
+
   realTimeName:string = name
 
   getNewNameFromChild(e){
