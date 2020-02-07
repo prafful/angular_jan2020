@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from "@angular/forms";
-import { ReactiveFormsModule } from "@angular/forms";
-import { HttpClientModule } from "@angular/common/http";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,7 +15,7 @@ import { NotificationComponent } from './events/notification/notification.compon
 import { NorouteComponent } from './notfound/noroute/noroute.component';
 import { SuperComponent } from './directive/super/super.component';
 import { InbuiltComponent } from './pipe/inbuilt/inbuilt.component';
-import { CustompipeComponent } from "./pipe/custompipe/custompipe.component";
+import { CustompipeComponent } from './pipe/custompipe/custompipe.component';
 import { SuperstringPipe } from './custompipe/superstring.pipe';
 import { TemplateformComponent } from './forms/templateform/templateform.component';
 import { ReactiveformComponent } from './forms/reactiveform/reactiveform.component';
@@ -28,12 +28,13 @@ import { EditcabComponent } from './consume/editcab/editcab.component';
 import { ParentComponent } from './eventbinding/parent/parent.component';
 import { Child1Component } from './eventbinding/child1/child1.component';
 import { Child2Component } from './eventbinding/child2/child2.component';
-import { AnimatetextComponent } from "./animation/animatetext/animatetext.component";
+import { AnimatetextComponent } from './animation/animatetext/animatetext.component';
 import { Route1Component } from './events/route1/route1.component';
 import { Route2Component } from './events/route2/route2.component';
 import { Route3Component } from './events/route3/route3.component';
 
-//@ -> decorator
+
+// @ -> decorator
 @NgModule(
   {
     declarations: [
@@ -70,7 +71,7 @@ import { Route3Component } from './events/route3/route3.component';
                 ReactiveFormsModule,
                 HttpClientModule,
                 BrowserAnimationsModule
-                
+
               ],
     providers: [],
     bootstrap: [RootComponent]

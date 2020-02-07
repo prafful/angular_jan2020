@@ -3,17 +3,17 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 
 @Component({
-  selector: 'cts-reactiveform',
+  selector: 'app-reactiveform',
   templateUrl: './reactiveform.component.html',
   styleUrls: ['./reactiveform.component.css']
 })
 export class ReactiveformComponent implements OnInit {
 
-  reactiveUserForm: any
-  fn:string
-  ln:string
-  sl:number
-  loc:string
+  reactiveUserForm: any;
+  fn: string;
+  ln: string;
+  sl: number;
+  loc: string;
 
   constructor() { }
 
@@ -25,22 +25,22 @@ export class ReactiveformComponent implements OnInit {
                                                                                 Validators.pattern('^[a-zA-Z]+$')
                                                                             ])),
                                             ln: new FormControl(),
-                                            sl: new FormControl("", this.customValidator),
-                                            loc:new FormControl()
-                                        })
+                                            sl: new FormControl('', this.customValidator),
+                                            loc: new FormControl()
+                                        });
   }
 
-  customValidator = function(formControl){
+  customValidator = function(formControl) {
     console.log(formControl);
-    if(formControl.value < 100){
-      return {sl:true}
+    if (formControl.value < 100) {
+      return {sl: true};
     }
 
-  }
+  };
 
-  userAdded = function(ruf){
+  userAdded = function(ruf) {
     console.log(ruf);
     console.log(ruf.value);
-  }
+  };
 
 }

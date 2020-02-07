@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="location" datatype="html">
+        <source>
+  I am in Chennai!
+</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events/route1/route1.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="message" datatype="html">
+        <source>Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events/route1/route1.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b3a66c5ca366df05be0b427b1f5e84ac8aa86552" datatype="html">
+        <source>Go somewhere</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events/route1/route1.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

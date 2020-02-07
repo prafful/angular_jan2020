@@ -1,17 +1,21 @@
 <p>Parent Component</p>
-Name: {{name}}   <i>(name value in parent component)</i>
+Name: {{name}}   <i>(name value in parent component)</i> &nbsp;
+<input type="text" [(ngModel)]='name' >
 <br>
 Real Time Name: {{realTimeName}}
+<br>
+Friends: {{friends}}
 <hr>
 <br>
 Child Components:
 <br>
 <br>
 Child1:
-<cts-child1 [sendname]='name' 
+<app-child1  [sendname]='name' 
             (newName)="getNewNameFromChild($event)" 
-            (realTimeChange)="getNewNameInRealTime($event)"></cts-child1>
+            (realTimeChange)="getNewNameInRealTime($event)"></app-child1>
 <hr>
 <br>
 Child 2:
-<cts-child2></cts-child2>
+<app-child2 *ngIf='destroy'> </app-child2>
+<button (click)="destroyChild2()">Destroy</button>

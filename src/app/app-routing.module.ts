@@ -23,91 +23,91 @@ import { Route3Component } from './events/route3/route3.component';
 
 
 const routes: Routes = [
-  
+
   {
-    path:'',
-    redirectTo:'notify',
-    pathMatch:'full'
+    path: '',
+    redirectTo: 'notify',
+    pathMatch: 'full'
   },
   {
-    path:'homepage',
-    component:HomepageComponent
+    path: 'homepage',
+    component: HomepageComponent
   },
   {
-    path:'notify',
-    component:NotificationComponent,
-    children:[
+    path: 'notify',
+    component: NotificationComponent,
+    children: [
       {
-        path:'r1',
-        component:Route1Component
+        path: 'r1',
+        component: Route1Component
       },
       {
-        path:'r2',
-        component:Route2Component
+        path: 'r2',
+        component: Route2Component
       },
       {
-        path:'r3',
-        component:Route3Component
+        path: 'r3',
+        component: Route3Component
       }
     ]
   } ,
   {
-    path:'directive',
-    component:SuperComponent
+    path: 'directive',
+    component: SuperComponent
   },
   {
-    path:'inbuiltpipe',
-    component:InbuiltComponent
+    path: 'inbuiltpipe',
+    component: InbuiltComponent
   },
   {
-    path:'custompipe',
-    component:CustompipeComponent
+    path: 'custompipe',
+    component: CustompipeComponent
   },
   {
-    path:'templateform',
-    component:TemplateformComponent
+    path: 'templateform',
+    component: TemplateformComponent
   },
   {
-    path:'reactiveform',
-    component:ReactiveformComponent
+    path: 'reactiveform',
+    component: ReactiveformComponent
   },
   {
-    path:'consume1',
-    component:ConsumeLocal1Component
+    path: 'consume1',
+    component: ConsumeLocal1Component
   },
   {
-    path:'consume2',
-    component:ConsumeLocal2Component
+    path: 'consume2',
+    component: ConsumeLocal2Component
   },
   {
-    path:'remote',
-    component:ConsumeremoteComponent
+    path: 'remote',
+    component: ConsumeremoteComponent
   },
   {
-    path:'viewcab/:myid',
-    component:ViewcabComponent
+    path: 'viewcab/:myid',
+    component: ViewcabComponent
   },
   {
-    path:'openaddcab',
-    component:AddcabComponent
+    path: 'openaddcab',
+    component: AddcabComponent
   },
   {
-    path:'editcab/:editId',
-    component:EditcabComponent
+    path: 'editcab/:editId',
+    component: EditcabComponent
   },
   {
-    path:'eventbinding',
-    component:ParentComponent
+    path: 'eventbinding',
+    component: ParentComponent
   },
   {
-    path:'animatetext',
-    component:AnimatetextComponent
+    path: 'animatetext',
+    component: AnimatetextComponent
   },
   {
-    path:'**',
-    component:NorouteComponent
+    path: '**',
+    component: NorouteComponent
   }
- 
+
 ];
 
 @NgModule({

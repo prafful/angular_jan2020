@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="location" datatype="html">
+        <source>
+  I am in Chennai!
+</source>
+<target>நான் சென்னையில் இருக்கிறேன்</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events/route1/route1.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="message" datatype="html">
+        <source>Some quick example text to build on the card title and make up the bulk of the card&apos;s content.</source>
+        <target>அட்டை தலைப்பில் உருவாக்க மற்றும் அட்டை உள்ளடக்கத்தின் பெரும்பகுதியை உருவாக்குவதற்கான சில விரைவான எடுத்துக்காட்டு உரை.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events/route1/route1.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b3a66c5ca366df05be0b427b1f5e84ac8aa86552" datatype="html">
+        <source>Go somewhere</source>
+        <target>
+12/5000
+எங்காவது செல்லுங்கள்</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/events/route1/route1.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'cts-noroute',
+  selector: 'app-noroute',
   templateUrl: './noroute.component.html',
   styleUrls: ['./noroute.component.css']
 })

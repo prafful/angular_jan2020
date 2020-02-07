@@ -1,36 +1,39 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from "../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
 })
 export class RemoteService {
 
-  constructor(private http:HttpClient) { }
-
-  getRemoteUsers(){
-    return this.http.get("https://jsonplaceholder.typicode.com/users")
+  constructor(private http: HttpClient) { 
+    console.log(environment.apiurl);
   }
 
-  getAllCabs(){
-    return this.http.get('http://localhost:3000/allcabs')
+  getRemoteUsers() {
+    return this.http.get('https://jsonplaceholder.typicode.com/users');
   }
 
-  getCabById(id){
-    return this.http.get('http://localhost:3000/allcabs' + '/' + id  )
+  getAllCabs() {
+    return this.http.get('http://localhost:3000/allcabs');
   }
 
-  addCab(cab){
-    return this.http.post('http://localhost:3000/allcabs', cab)
+  getCabById(id) {
+    return this.http.get('http://localhost:3000/allcabs' + '/' + id  );
+  }
+
+  addCab(cab) {
+    return this.http.post('http://localhost:3000/allcabs', cab);
 
   }
 
-  deleteCab(id){
-    return this.http.delete('http://localhost:3000/allcabs' + '/' + id)
+  deleteCab(id) {
+    return this.http.delete('http://localhost:3000/allcabs' + '/' + id);
   }
 
-  updateCab(id, cab){
-    return this.http.put('http://localhost:3000/allcabs' + '/' + id, cab)
+  updateCab(id, cab) {
+    return this.http.put('http://localhost:3000/allcabs' + '/' + id, cab);
   }
 
 

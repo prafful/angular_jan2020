@@ -62,6 +62,14 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "ta":{
+              "aot": true,
+              "i18nFile": "translate/messages.ta.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "ta",
+              "i18nMissingTranslation": "error"
+
             }
           }
         },
@@ -73,6 +81,9 @@
           "configurations": {
             "production": {
               "browserTarget": "angularFirst:build:production"
+            },
+            "ta":{
+              "browserTarget": "angularFirst:build:ta"
             }
           }
         },
